@@ -41,6 +41,7 @@ void app() {
     while (gameContinue || newGame) {
         if (newGame) {
             ball.moveTo(max_x * 0.5, max_y * 0.5);
+            ball.resetDirection();
             paddle.moveTo(y);
             gamePoint = 0;
             gameWin.printGamePoint(gamePoint);

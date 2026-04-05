@@ -102,10 +102,10 @@ bool GameWindow::printContinuePlaying() {
         switch (ch)
         {
             case KEY_DOWN:
-                chosen = (chosen + 1) % 2;
+                chosen = abs(chosen + 1) % 2;
                 break;
             case KEY_UP:
-                chosen = (chosen - 1) % 2;
+                chosen = abs(chosen - 1) % 2;
                 break;
             case KEY_ENTER:
             case '\n':

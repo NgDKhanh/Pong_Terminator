@@ -37,8 +37,8 @@ void Ball::move() {
 
 void Ball::moveTo(int des_x, int des_y) {
     clear();
-    if ( (des_x <= upper_bound_x - 1 && des_x >= lower_bound_x) && (y <= upper_bound_y - 1 && y >= lower_bound_y) ) {
-    setPosition(des_x, des_y);
+        if ( (des_x <= upper_bound_x - 1 && des_x >= lower_bound_x) && (y <= upper_bound_y - 1 && y >= lower_bound_y) ) {
+        setPosition(des_x, des_y);
     }
     render();
 }

@@ -46,7 +46,7 @@ class Paddle {
         this->y = y;
     }
 
-    private:
+private:
     int x, y;
     int upper_bound_y;
     int lower_bound_y;

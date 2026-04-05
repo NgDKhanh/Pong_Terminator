@@ -27,7 +27,9 @@ public:
         this->y = y;
     }
 
-    private:
+    void resetDirection() { delta_x = abs(delta_x); }
+
+private:
     int x, y;
     int delta_x, delta_y;
     int upper_bound_y;
